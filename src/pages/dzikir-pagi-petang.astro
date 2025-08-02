@@ -1,7 +1,42 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Dzikir from "@components/dzikir";
 ---
 
 <Layout>
-  <main class="mt-14 p-6">dzikir pagi petang</main>
+  <main class="mt-14 p-6">
+    <span class="text-3xl mt-4 mb-2 border-b border-dotted">
+      Waktu afdhol dzikir pagi & petang
+    </span>
+    <p class="!ml-0">
+      dan bertasbihlah kepada-Allah pada saat bukroh dan ashiil. (QS. Al-Ahzab)
+      Bukroh maknanya adalah awal hari, yaitu antara subuh sampai terbit
+      matahari. Adapun ashil adalah, sore hari, antara asar sampai tiba waktu
+      maghrib. ghrib. (Lihat : Al -Wabil As Shoyyib, Ibnul Qayyim, hal.93)
+    </p>
+
+    <span class="text-3xl mt-4 mb-2 border-b border-dotted">Waktu Longgar</span>
+    <p class="!ml-0">
+      Adapun di luar waktu afdhol, di sana ada waktu longgar untuk berdzikir
+      pagi petang. Yaitu pagi dimulai dari setengah malam terakhir sampai
+      sebelum tergelincir matahari ke barat (waktu dhuhur/zawal). Kemudian sore
+      dimulai sejak zawal sampai akhir pertengahan malam
+    </p>
+
+    <span class="text-3xl mt-4 mb-2 border-b border-dotted">
+      Dalam Fatawa Syabakah Islamiyyah dijelaskan
+    </span>
+    <p class="!ml-0">
+      “Waktu pagi dimulai sejak setengah malam yang akhir sampai waktu waktu
+      zawal. Namun waktu afdhol untuk dzikir pagi adalah membacanya setelah
+      subuh sampai terbit matahari. Sebagaimana waktu petang dimulai sejak zawal
+      sampai akhir setengah malam awal. Namun waktu yang afdhol untuk dzikir
+      petang adalah setelah asar sampai tenggelamnya matahari.” (Fatawa Syabakah
+      Islamiyyah no.106945)
+    </p>
+
+    <div class="mt-10">
+      <Dzikir client:visible />
+    </div>
+  </main>
 </Layout>

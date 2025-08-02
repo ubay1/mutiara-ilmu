@@ -4,10 +4,10 @@
 // import back from '@icons/back.svg'
 // import '@fontsource/homemade-apple'
 // import '@fontsource-variable/rubik'
-import '@styles/global.css'
-import dayjs from 'dayjs'
+import "@styles/global.css";
+import dayjs from "dayjs";
 
-const { frontmatter } = Astro.props
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
@@ -20,19 +20,24 @@ const { frontmatter } = Astro.props
     <title>{frontmatter.title}</title>
     <!-- <script src="/src/pwa.ts"></script> -->
     <!-- { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> } -->
-    
   </head>
   <body class="m-auto text-[#ebe6e7]">
     <div class="p-0 m-auto h-56 md:h-72 relative bg-gray-800 lt-lg:p-0">
-      <img src={frontmatter.imagePath} class="w-full h-full aspect-video object-cover brightness-30" alt="" />
-      <div class="absolute top-0 flex justify-center items-center h-full w-full">
+      <img
+        src={frontmatter.imagePath}
+        class="w-full h-full aspect-video object-cover brightness-30"
+        alt=""
+      />
+      <div
+        class="absolute top-0 flex justify-center items-center h-full w-full"
+      >
         <h1 class="text-3xl z-40 line-clamp-2 font-bold text-center">
           {frontmatter.title}
         </h1>
       </div>
       <div class="absolute bottom-2 right-2 md:right-4">
         <div class="text-xs italic">
-          Diterbitkan: {dayjs(frontmatter.date).format('DD MMMM YYYY HH:mm:ss')}
+          Diterbitkan: {dayjs(frontmatter.date).format("DD MMMM YYYY")}
         </div>
       </div>
     </div>
