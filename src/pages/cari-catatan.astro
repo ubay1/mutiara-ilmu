@@ -1,0 +1,20 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Search from "astro-pagefind/components/Search";
+---
+
+<Layout>
+  <main class="mt-14 p-6">
+    <div class="search-wrapper">
+      <Search
+        id="search"
+        className="pagefind-ui"
+        uiOptions={{
+          showImages: false,
+          excerptLength: 25,
+          resetStyles: false,
+        }}
+      />
+    </div>
+  </main>
+</Layout>

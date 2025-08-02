@@ -1,0 +1,38 @@
+{
+  "name": "mutiara-ilmu",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --port=4000",
+    "build": "astro build",
+    "preview": "astro preview --port=4000",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@heroui/accordion": "^2.2.21",
+    "@heroui/alert": "^2.2.24",
+    "@heroui/button": "^2.2.24",
+    "@heroui/card": "^2.2.23",
+    "@heroui/image": "^2.2.15",
+    "@heroui/listbox": "^2.3.23",
+    "@heroui/navbar": "^2.2.22",
+    "@heroui/react": "^2.8.2",
+    "@heroui/system": "^2.4.20",
+    "@heroui/theme": "^2.4.20",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "astro": "^5.12.5",
+    "astro-pagefind": "^1.8.3",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.23.12",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11",
+    "zustand": "^5.0.7"
+  },
+  "devDependencies": {
+    "@iconify/react": "^6.0.0"
+  }
+}

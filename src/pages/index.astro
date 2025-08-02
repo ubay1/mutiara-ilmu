@@ -1,0 +1,24 @@
+---
+import Quote from '@components/quote';
+import Notes from '@components/notes';
+import Layout from '../layouts/Layout.astro';
+
+const allBlogs= import.meta.glob('./catatan/*.md', {eager: true})
+const postModules = Object.entries(allBlogs);
+
+const posts = Object.values(postModules).map((mod: any) => {
+  return {
+		path: mod[0],
+    frontmatter: mod[1]?.frontmatter
+  };
+});
+
+// console.log(posts)
+---
+
+<Layout>
+	<main class="p-6 mt-14">
+		<Quote client:visible/>
+		<Notes client:visible  data={posts} />
+	</main>
+</Layout>
